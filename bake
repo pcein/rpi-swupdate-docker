@@ -4,5 +4,9 @@ export LANG=en_US.UTF-8
 . ./layers/poky/oe-init-build-env  build
 echo 'After sourcing oe-init-build-env..in folder'
 pwd
+cat /proc/1/cgroup
+echo '--------------------'
+echo $PATH
+echo '---------------------'
 echo "starting bitbake from this folder: $PWD"
 bitbake update-image
