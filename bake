@@ -1,4 +1,6 @@
 
+export LANG=en_US.UTF-8
+
 . ./layers/poky/oe-init-build-env  build
 echo 'After sourcing oe-init-build-env..in folder'
 pwd
