@@ -5,7 +5,7 @@ pipeline {
     agent {
 	docker {
 	    image 'pcein/ubuntu_yocto'
-	    args '--mount type=bind,source=/home/pramode/yocto-caches,target=/home/pramode/yocto-caches'
+	    args '-v /home/pramode/:/home/pramode'
 	}
     }		
 
